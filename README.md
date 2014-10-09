@@ -8,8 +8,8 @@ Installation
 
 As root, run the installation script 
 
+    # yum install -y git
     # git clone git://github.com/ivy001/OpenVPN_AutoInstall
-
     # bash install_openvpn_centos.sh 
 
 
