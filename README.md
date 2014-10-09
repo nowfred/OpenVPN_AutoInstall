@@ -10,6 +10,6 @@ As root, run the installation script
 
     # git clone git://github.com/ivy001/OpenVPN_AutoInstall
 
-    # bash Install_OpenVPN_Centos.sh
+    # bash install_openvpn_centos.sh 
 
 
