@@ -30,7 +30,7 @@ exit
 trap roll_back SIGHUP SIGINT SIGTERM
 trap 'line_error $LINENO' ERR
 
-cd /opt
+cd /opt 
 
 echo Installing epel repo
 yum repolist | grep -i epel  || wget http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
