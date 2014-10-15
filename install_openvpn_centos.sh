@@ -32,6 +32,9 @@ trap 'line_error $LINENO' ERR
 
 cd /opt 
 
+echo Installing wget
+yum install wget -y
+
 echo Installing epel repo
 yum repolist | grep -i epel  || wget http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
 
@@ -44,7 +47,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo Installing EASY-RSA
-yum install easy-rsa  # since openvpn does not ship with that anymore
+yum install easy-rsa -y # since openvpn does not ship with that anymore
 
 #Install openVPN and copy server configuration after that
 echo Installing OpenVPN
