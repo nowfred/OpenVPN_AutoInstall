@@ -187,4 +187,3 @@ service openvpn start  && chkconfig openvpn on && echo installation completed.
 ) 2>&1 | tee /opt/openvpn_install.log
 
 cd /etc/openvpn/easy-rsa && \
-
