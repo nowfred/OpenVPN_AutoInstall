@@ -62,9 +62,6 @@ if [ $? -ne 0 ]; then
 fi
 
 echo Edit config file /etc/openvpn/server.conf
-# Updating the line about 2048bit vs 1024bit key
- perl -p -i -e "s/dh dh1024.pem/dh dh2048.pem/i"  /etc/openvpn/server.conf  || echo dh dh2048.pem >> /etc/openvpn/server.conf
-
  perl -p -i -e "s/;push \"redirect/push \"redirect/i"  /etc/openvpn/server.conf  || echo push '"redirect-gateway def1 bypass-dhcp"' >> /etc/openvpn/server.conf
 
 #Uncomment the lines for traffic routing
